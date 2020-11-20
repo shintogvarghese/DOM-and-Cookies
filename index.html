@@ -15,8 +15,8 @@ th,td {
 </style>
 <body>
 <h1>Our Trainers</h1>
-<p>Click on a track to get details of Songs you like</p>
-<p id='showtrc'></p>
+<p>Click on the trainer's name to get more details about them</p>
+<p id='coachdetails'></p>
 <table id="demo"></table>
 <select id="dem" onchange="show()">
         <option value="Select Color">Select Color</option>
@@ -42,7 +42,7 @@ for (i = 0; i <x.length; i++) {
 document.getElementById("demo").innerHTML = table;
 
 function displaytrack(i) {
-  document.getElementById("showtrc").innerHTML =
+  document.getElementById("coachdetails").innerHTML =
   "SONG: " +
   x[i].getElementsByTagName("song")[0].childNodes[0].nodeValue +
   "<br>ARTIST: " +
