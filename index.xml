@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <musics>
     <music mid="M1">
-        <song>Lovely</song>
+        <name>Lovely</name>
         <artist>Billie</artist>
         <size>6</size>
         <price>150</price>
         <download>Lovelymp3</download>
     </music>
     <music mid="M2">
-        <song>Erase you</song>
+        <name>Erase you</name>
         <artist>Catrien Maxwell</artist>
         <size>5</size>
         <price>165</price>
         <download>EraseYoump3</download>
     </music>
     <music mid="M3">
-        <song>Savage Love</song>
+        <name>Savage Love</name>
         <artist>Jason Derulo</artist>
         <size>5</size>
         <price>210</price>
@@ -29,7 +29,7 @@
         <download>YouBrokeMeFirstmp3</download>
     </music>
     <music mid="M5">
-        <song>Rockstar</song>
+        <name>Rockstar</name>
         <artist>DaBaby</artist>
         <size>7</size>
         <price>130</price>
