@@ -20,8 +20,8 @@ th,td {
 <table id="demo"></table>
 <select id="dem" onchange="show()">
         <option value="Select Color">Select Color</option>
-        <option value="yellow">Yellow</option>
-        <option value="pink">Pink</option>
+        <option value="cyan">Cyan</option>
+        <option value="red">Red</option>
         <option value="orange">Orange</option>
     </select>
 <script>
@@ -31,7 +31,7 @@ xmlhttp.open("GET", "index.xml", false);
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
 x = xmlDoc.getElementsByTagName("music");
-table="<tr><th>SONG TITLE</th><th>ARTIST</th></tr>";
+table="<tr><th>Coach Name</th><th>Speciality</th></tr>";
 for (i = 0; i <x.length; i++) {
   table += "<tr onclick='displaytrack(" + i + ")'><td>";
   table += x[i].getElementsByTagName("song")[0].childNodes[0].nodeValue;
