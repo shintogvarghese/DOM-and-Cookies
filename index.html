@@ -34,7 +34,7 @@ x = xmlDoc.getElementsByTagName("music");
 table="<tr><th>Coach Name</th><th>Speciality</th></tr>";
 for (i = 0; i <x.length; i++) {
   table += "<tr onclick='displaytrack(" + i + ")'><td>";
-  table += x[i].getElementsByTagName("song")[0].childNodes[0].nodeValue;
+  table += x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
   table += "</td><td>";
   table +=  x[i].getElementsByTagName("artist")[0].childNodes[0].nodeValue;
   table += "</td></tr>";
@@ -44,7 +44,7 @@ document.getElementById("demo").innerHTML = table;
 function displaytrack(i) {
   document.getElementById("coachdetails").innerHTML =
   "SONG: " +
-  x[i].getElementsByTagName("song")[0].childNodes[0].nodeValue +
+  x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
   "<br>ARTIST: " +
   x[i].getElementsByTagName("artist")[0].childNodes[0].nodeValue +
   "<br>SIZE: " +
